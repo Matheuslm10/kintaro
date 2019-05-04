@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+    <header class="menu">
+        <div class="container">
+            <div class="menu_logo">
+                <a href="home.html"><img src="img/kintaro.svg" alt=""></a>
+                <input class="input" type="search" placeholder="Busque por marcas, produtos, cores...">
+                <img src="img/search_icon.svg" alt="">
+            </div>
+            <nav>
+                <div class="menu_nav">
+                    <div class="item_nav">
+                        <a href="carrinho.html"><img src="img/user.svg" alt="">
+                    </div>
+                    <p>Login</p>
+                    </a>
+                    <div class="item_nav">
+                        <a href="carrinho.html"><img src="img/shopping-cart.svg" alt="">
+                    </div>
+                    <p>Carrinho</p>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="carrinho">
+        <div class="container_carrinho column_carrinho">
+            <div class="ball_shop">
+                <img src="img/ball_shop.svg" alt="">
+            </div>
+            <h1>Meu Carrinho</h1>
+            <h4>Guardamos suas compras para você :)</h4>
+            <button>COMPRAR MAIS</button>
+        </div>
+    </section>
+    <main>
+        <h5>Produtos</h5>
+        <section class="produtos column_produtos">
+            <div onclick="adicionarCesta('Camiseta')">
+                <img src="img/camiseta.png" alt="Camiseta Adidas">
+                <p>Camiseta Adidas Anti-Transpirante</p>
+                <span class="line-through">R$160</span><span class="orange">R$120</span></p>
+                <span class="orange">3x de R$40</span>
+            </div>
+            <div onclick="adicionarCesta('Baseball')">
+                <img src="img/bolabaseball.png" alt="Baseball">
+                <p>Bola de Beisebol Vollo Classic</p>
+                <span class="line-through">R$75</span><span class="orange">R$60</span></p>
+                <span class="orange">3x de R$20</span>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
